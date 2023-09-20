@@ -1,0 +1,4 @@
+C:\Users\gustavoledo\Documents\meus_projetos\csharp_parte1ex\obj\Debug\net7.0\csharp_parte1ex.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gustavoledo\Documents\meus_projetos\csharp_parte1ex\obj\Debug\net7.0\csharp_parte1ex.AssemblyInfoInputs.cache
+C:\Users\gustavoledo\Documents\meus_projetos\csharp_parte1ex\obj\Debug\net7.0\csharp_parte1ex.AssemblyInfo.cs
+C:\Users\gustavoledo\Documents\meus_projetos\csharp_parte1ex\obj\Debug\net7.0\csharp_parte1ex.csproj.CoreCompileInputs.cache
