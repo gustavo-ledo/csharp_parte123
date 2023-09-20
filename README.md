@@ -1,2 +1,2 @@
-# csharp_parte1ex_bne
- exs de c sharp parte 1
+# exercicios de C sharp no BNE
+ exs de c sharp parte 1, 3 e 3
