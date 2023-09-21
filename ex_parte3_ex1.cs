@@ -3,7 +3,13 @@ using System;
  class program{
 
     static void Main(string[] args){
-        metodo R = new metodo();
+        RecebeDados dados_recebidos = new RecebeDados();
+    }
+}
+
+class RecebeDados{
+    static void Dados(string[] args){
+       metodo R = new metodo();
         Console.Write("informe o valor presente: ");
         R.valor_p = Convert.ToDouble(Console.ReadLine());
         Console.Write("informe a taxa de juros presente: ");
@@ -13,6 +19,12 @@ using System;
         R.valor_F();
     }
 }
+
+
+
+
+
+
 
 public class metodo{
     public double valor_p;
