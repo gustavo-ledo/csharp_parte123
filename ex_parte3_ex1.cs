@@ -1,41 +1,38 @@
 using System;
 
- class program{
-
-    static void Main(string[] args){
+class Program {
+    static void Main(string[] args) {
         RecebeDados dados_recebidos = new RecebeDados();
+        dados_recebidos.Dados();
     }
 }
 
-class RecebeDados{
-    static void Dados(string[] args){
-       metodo R = new metodo();
-        Console.Write("informe o valor presente: ");
+class RecebeDados {
+    public void Dados() {
+        Metodo R = new Metodo();
+
+        Console.Write("Informe o valor presente: ");
         R.valor_p = Convert.ToDouble(Console.ReadLine());
-        Console.Write("informe a taxa de juros presente: ");
-        R.tx_juros = Convert.ToDouble(Console.ReadLine());
-        Console.Write("informe o periodo: ");
-        R.periodo = int.Parse(Console.ReadLine()); 
+
+        Console.Write("Informe a taxa de juros mensal (em %): ");
+        R.tx_juros = Convert.ToDouble(Console.ReadLine()) / 100;
+
+        Console.Write("Informe o período em dias: ");
+        R.periodoDias = int.Parse(Console.ReadLine());
         R.valor_F();
     }
 }
 
-
-
-
-
-
-
-public class metodo{
+public class Metodo {
     public double valor_p;
     public double tx_juros;
-    public int periodo;
-    
-    public void valor_F(){
-        
-        tx_juros = tx_juros / 100;
-       double valor_final = valor_p*Math.Pow(1+tx_juros, periodo);
-        Console.Write(valor_final);
+    public int periodoDias;
+    public void valor_F() {
+        int diasNoMes = 30;
+        int meses = periodoDias / diasNoMes;
+        int diasRestantes = periodoDias % diasNoMes;
 
+        double valor_final = valor_p * Math.Pow(1 + tx_juros, meses) * Math.Pow(1 + tx_juros * diasRestantes / diasNoMes, 1);
+        Console.WriteLine($"O valor final é:{valor_final:C}");
     }
 }
