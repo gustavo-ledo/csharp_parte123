@@ -79,18 +79,7 @@ static void Main4(string[] args){
         Console.WriteLine($"seu saldo é {v_saldo:C}");
         cont++;
           
-     Console.WriteLine("Deseja retirar? ");
-        string r = Console.ReadLine();
-        while(r == "s")
-        {
-          Console.WriteLine("Informe o valor do resgate: ");
-          double resgate = Convert.ToDouble(Console.ReadLine());
-          F = v_saldo - resgate;
-          Console.WriteLine($"{F:C}");
-					
-        }
-          cont++;
-      }
+    
 }
 
 
